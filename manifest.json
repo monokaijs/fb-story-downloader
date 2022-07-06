@@ -1,0 +1,10 @@
+{
+  "name": "FB Story Downloader",
+  "version": "1.0",
+  "description": "Download your story on ease.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
