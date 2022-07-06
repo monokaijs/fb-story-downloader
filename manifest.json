@@ -2,9 +2,22 @@
   "name": "FB Story Downloader",
   "version": "1.0",
   "description": "Download your story on ease.",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/*.png",
+    "interceptor.js"
+  ],
+  "permissions": [
+    "webRequest"
+  ],
   "manifest_version": 2
 }
